@@ -1,0 +1,152 @@
+/* public/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+ 
+    background-color: #f4f4f4;
+   
+  }
+  
+  
+
+  .header {
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+    height: 200px;
+    background: url(/brain.jpg);
+    background-size: 100% 100%;
+    object-fit: cover;
+    max-width: 400px;
+    margin: 40px auto 0 auto;
+  }
+
+  .header h1 {
+      color: #ccc7c7;
+      font-size: 3rem;
+      position: relative;
+      bottom: 20px;
+      text-transform: uppercase;
+  }
+
+  .header p {
+    color: #ccc7c7;
+  }
+
+ 
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 20px;
+
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+    margin-right: 10px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .new {
+    
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 10px auto;
+    padding: 20px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #7b00ff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    
+  }
+
+  .post {
+    text-align: center;
+  }
+
+  .post h1 {
+    margin: 40px;
+  }
+
+  .post p {
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    line-height: 20px;
+    margin: 0 auto 40px auto;
+  }
+
+  .edit {
+    text-align: center;
+  }
+
+  .edit h1 {
+    margin: 40px;
+  }
+
+  .edit form {
+    margin-bottom: 40px;
+  }
+  .create {
+    text-align: center;
+  }
+
+  .create h1 {
+    margin: 40px;
+  }
+
+  .create form {
+    margin-bottom: 40px;
+  }
+  

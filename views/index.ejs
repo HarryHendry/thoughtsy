@@ -1,0 +1,32 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="/styles.css" type="text/css">
+
+  <title>My Blog</title>
+</head>
+<body>
+
+  <div class="header">
+  <h1>Thoughtsy</h1>
+  <p>A place to quickly add your thoughts</p>
+  </div>
+
+  <ul>
+    <% posts.forEach(post => { %>
+      <li>
+        <a href="/post/<%= post.id %>"><%= post.title %></a>
+        <span>
+          <a href="/edit/<%= post.id %>">Edit</a>
+          <a href="/delete/<%= post.id %>">Delete</a>
+        </span>
+      </li>
+    <% }); %>
+  </ul>
+  <a href="/new" class="new">Create a New Post</a>
+</body>
+</html>
